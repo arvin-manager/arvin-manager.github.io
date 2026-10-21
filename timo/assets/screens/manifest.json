@@ -1,0 +1,236 @@
+[
+  {
+    "locale": "zh-Hant",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/zh_Hant_03-calendar.png",
+    "output": "timo/assets/screens/zh-Hant/calendar.webp"
+  },
+  {
+    "locale": "zh-Hant",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/zh_Hant_04-focus.png",
+    "output": "timo/assets/screens/zh-Hant/focus.webp"
+  },
+  {
+    "locale": "zh-Hant",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/zh_Hant_10-editor.png",
+    "output": "timo/assets/screens/zh-Hant/memo.webp"
+  },
+  {
+    "locale": "en",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/en_03-calendar.png",
+    "output": "timo/assets/screens/en/calendar.webp"
+  },
+  {
+    "locale": "en",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/en_04-focus.png",
+    "output": "timo/assets/screens/en/focus.webp"
+  },
+  {
+    "locale": "en",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/en_10-editor.png",
+    "output": "timo/assets/screens/en/memo.webp"
+  },
+  {
+    "locale": "ja",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/ja_03-calendar.png",
+    "output": "timo/assets/screens/ja/calendar.webp"
+  },
+  {
+    "locale": "ja",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/ja_04-focus.png",
+    "output": "timo/assets/screens/ja/focus.webp"
+  },
+  {
+    "locale": "ja",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/ja_10-editor.png",
+    "output": "timo/assets/screens/ja/memo.webp"
+  },
+  {
+    "locale": "ko",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/ko_03-calendar.png",
+    "output": "timo/assets/screens/ko/calendar.webp"
+  },
+  {
+    "locale": "ko",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/ko_04-focus.png",
+    "output": "timo/assets/screens/ko/focus.webp"
+  },
+  {
+    "locale": "ko",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/ko_10-editor.png",
+    "output": "timo/assets/screens/ko/memo.webp"
+  },
+  {
+    "locale": "fr",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/fr_03-calendar.png",
+    "output": "timo/assets/screens/fr/calendar.webp"
+  },
+  {
+    "locale": "fr",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/fr_04-focus.png",
+    "output": "timo/assets/screens/fr/focus.webp"
+  },
+  {
+    "locale": "fr",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/fr_10-editor.png",
+    "output": "timo/assets/screens/fr/memo.webp"
+  },
+  {
+    "locale": "de",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/de_03-calendar.png",
+    "output": "timo/assets/screens/de/calendar.webp"
+  },
+  {
+    "locale": "de",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/de_04-focus.png",
+    "output": "timo/assets/screens/de/focus.webp"
+  },
+  {
+    "locale": "de",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/de_10-editor.png",
+    "output": "timo/assets/screens/de/memo.webp"
+  },
+  {
+    "locale": "es",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/es_03-calendar.png",
+    "output": "timo/assets/screens/es/calendar.webp"
+  },
+  {
+    "locale": "es",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/es_04-focus.png",
+    "output": "timo/assets/screens/es/focus.webp"
+  },
+  {
+    "locale": "es",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/es_10-editor.png",
+    "output": "timo/assets/screens/es/memo.webp"
+  },
+  {
+    "locale": "pt",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/pt_03-calendar.png",
+    "output": "timo/assets/screens/pt/calendar.webp"
+  },
+  {
+    "locale": "pt",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/pt_04-focus.png",
+    "output": "timo/assets/screens/pt/focus.webp"
+  },
+  {
+    "locale": "pt",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/pt_10-editor.png",
+    "output": "timo/assets/screens/pt/memo.webp"
+  },
+  {
+    "locale": "ar",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/ar_03-calendar.png",
+    "output": "timo/assets/screens/ar/calendar.webp"
+  },
+  {
+    "locale": "ar",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/ar_04-focus.png",
+    "output": "timo/assets/screens/ar/focus.webp"
+  },
+  {
+    "locale": "ar",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/ar_10-editor.png",
+    "output": "timo/assets/screens/ar/memo.webp"
+  },
+  {
+    "locale": "th",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/th_03-calendar.png",
+    "output": "timo/assets/screens/th/calendar.webp"
+  },
+  {
+    "locale": "th",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/th_04-focus.png",
+    "output": "timo/assets/screens/th/focus.webp"
+  },
+  {
+    "locale": "th",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/th_10-editor.png",
+    "output": "timo/assets/screens/th/memo.webp"
+  },
+  {
+    "locale": "vi",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/vi_03-calendar.png",
+    "output": "timo/assets/screens/vi/calendar.webp"
+  },
+  {
+    "locale": "vi",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/vi_04-focus.png",
+    "output": "timo/assets/screens/vi/focus.webp"
+  },
+  {
+    "locale": "vi",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/vi_10-editor.png",
+    "output": "timo/assets/screens/vi/memo.webp"
+  },
+  {
+    "locale": "id",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/id_03-calendar.png",
+    "output": "timo/assets/screens/id/calendar.webp"
+  },
+  {
+    "locale": "id",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/id_04-focus.png",
+    "output": "timo/assets/screens/id/focus.webp"
+  },
+  {
+    "locale": "id",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/id_10-editor.png",
+    "output": "timo/assets/screens/id/memo.webp"
+  },
+  {
+    "locale": "zh-Hans",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/zh_Hans_03-calendar.png",
+    "output": "timo/assets/screens/zh-Hans/calendar.webp"
+  },
+  {
+    "locale": "zh-Hans",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/zh_Hans_04-focus.png",
+    "output": "timo/assets/screens/zh-Hans/focus.webp"
+  },
+  {
+    "locale": "zh-Hans",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/zh_Hans_10-editor.png",
+    "output": "timo/assets/screens/zh-Hans/memo.webp"
+  }
+]
