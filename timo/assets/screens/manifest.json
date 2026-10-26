@@ -232,5 +232,23 @@
     "kind": "memo",
     "source": "docs/app-store/screenshots/iphone/zh_Hans_10-editor.png",
     "output": "timo/assets/screens/zh-Hans/memo.webp"
+  },
+  {
+    "locale": "it",
+    "kind": "calendar",
+    "source": "docs/app-store/screenshots/iphone/it_03-calendar.png",
+    "output": "timo/assets/screens/it/calendar.webp"
+  },
+  {
+    "locale": "it",
+    "kind": "focus",
+    "source": "docs/app-store/screenshots/iphone/it_04-focus.png",
+    "output": "timo/assets/screens/it/focus.webp"
+  },
+  {
+    "locale": "it",
+    "kind": "memo",
+    "source": "docs/app-store/screenshots/iphone/it_10-editor.png",
+    "output": "timo/assets/screens/it/memo.webp"
   }
 ]
