@@ -3,3 +3,4 @@ Allow: /
 
 Sitemap: https://arvin-manager.github.io/sitemap.xml
 Sitemap: https://arvin-manager.github.io/shiftlog-support/sitemap.xml
+Sitemap: https://arvin-manager.github.io/timo/sitemap.xml
