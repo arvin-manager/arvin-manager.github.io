@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Workly · 工時記錄大師</title>
-  <meta name="description" content="智能工時記錄，精準薪資計算。Workly 幫助你輕鬆追蹤每日工時、自動計算薪資，支持多種計薪模式。" />
-  <meta property="og:title" content="Workly · 工時記錄大師" />
-  <meta property="og:description" content="智能工時記錄，精準薪資計算。" />
+  <title>工時記錄 App｜打卡、時薪計算與排班｜HourLedger 工時記錄大師</title>
+  <meta name="description" content="用工時記錄大師 HourLedger 記錄上下班、休息與加班，依時薪或月薪估算收入，發薪時核對薪資單。提供免費工時計算機，支援跨日夜班與無薪休息。" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://arvin-manager.github.io/" />
+  <link rel="icon" href="/app-icon.png" type="image/png" />
+  <meta name="apple-itunes-app" content="app-id=6780721454" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:site_name" content="HourLedger 工時記錄大師" />
+  <meta property="og:title" content="工時記錄 App｜打卡、時薪計算與排班｜HourLedger 工時記錄大師" />
+  <meta property="og:description" content="用工時記錄大師 HourLedger 記錄上下班、休息與加班，依時薪或月薪估算收入，發薪時核對薪資單。提供免費工時計算機，支援跨日夜班與無薪休息。" />
+  <meta property="og:url" content="https://arvin-manager.github.io/" />
+  <meta property="og:image" content="https://arvin-manager.github.io/app-icon.png" />
+  <meta property="og:image:alt" content="工時記錄大師 HourLedger App 圖示" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="工時記錄 App｜打卡、時薪計算與排班｜HourLedger 工時記錄大師" />
+  <meta name="twitter:description" content="用工時記錄大師 HourLedger 記錄上下班、休息與加班，依時薪或月薪估算收入，發薪時核對薪資單。提供免費工時計算機，支援跨日夜班與無薪休息。" />
+  <meta name="twitter:image" content="https://arvin-manager.github.io/app-icon.png" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://arvin-manager.github.io/#website", "url": "https://arvin-manager.github.io/", "name": "HourLedger 工時記錄大師", "inLanguage": "zh-Hant"}, {"@type": "MobileApplication", "@id": "https://arvin-manager.github.io/#app", "name": "工時記錄大師：打卡與薪資", "alternateName": "HourLedger: Work Hours", "operatingSystem": "iOS", "applicationCategory": "ProductivityApplication", "url": "https://arvin-manager.github.io/", "downloadUrl": "https://apps.apple.com/tw/app/id6780721454", "image": "https://arvin-manager.github.io/app-icon.png", "description": "用工時記錄大師 HourLedger 記錄上下班、休息與加班，依時薪或月薪估算收入，發薪時核對薪資單。提供免費工時計算機，支援跨日夜班與無薪休息。", "inLanguage": ["zh-Hant", "en", "ja", "ko", "id"]}]}</script>
   <style>
+    .answers { max-width: 720px; margin: 32px auto 0; }
+    .answers h3 { margin: 28px 0 10px; font-size: 18px; line-height: 1.5; }
+    .answers p { color: var(--text-secondary); line-height: 1.8; }
+    .answers a { color: var(--primary-dark); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid var(--primary); outline-offset: 4px; }
+    .nav-links { flex-wrap: wrap; }
+    @media (max-width: 600px) {
+      nav { height: auto; min-height: 64px; padding: 12px 16px; gap: 16px; }
+      .nav-links { gap: 8px 14px; justify-content: flex-end; }
+      .nav-links a { font-size: 13px; min-height: 24px; }
+    }
+
     :root {
-      --primary: #4A6FE3;
+      --primary: #3558CC;
       --primary-dark: #3558CC;
       --primary-light: #6B8FF7;
       --text: #1A1D2E;
@@ -106,10 +133,7 @@
       line-height: 1.12;
       letter-spacing: -0.02em;
       margin-bottom: 20px;
-      background: linear-gradient(135deg, var(--text) 30%, var(--primary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--text);
     }
     .hero-sub {
       font-size: clamp(16px, 2.5vw, 19px);
@@ -261,7 +285,7 @@
       border-radius: 4px;
       margin-bottom: 10px;
     }
-    .mode-card h4 {
+    .mode-card h3 {
       font-size: 14px;
       font-weight: 700;
       margin-bottom: 4px;
@@ -343,40 +367,36 @@
     <div class="nav-icon">
       <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
     </div>
-    <span class="nav-title">Workly</span>
+    <span class="nav-title">HourLedger</span>
   </a>
   <div class="nav-links">
-    <a href="#features">功能 Features</a>
-    <a href="#modes">計薪模式 Modes</a>
-    <a href="https://arvin-manager.github.io/workly-privacy">隱私政策 Privacy</a>
+    <a href="#features">App 功能</a>
+    <a href="/work-hours-calculator/">工時計算機</a>
+    <a href="#modes">計薪方式</a>
+    <a href="https://arvin-manager.github.io/workly-privacy">隱私政策</a>
   </div>
 </nav>
 
+<main>
 <!-- Hero -->
 <div class="hero">
-  <div class="hero-badge">iOS App</div>
-  <h1>工時記錄大師<br/>Workly</h1>
-  <p class="hero-sub">
-    智能工時記錄，精準薪資計算<br/>
-    <span style="font-size:14px;opacity:0.8">Track every hour. Calculate every penny.</span>
-  </p>
+
+  <h1>工時記錄、打卡<br/>與薪資試算</h1>
+  <p class="hero-sub">工時記錄大師 HourLedger，為時薪打工、兼職與輪班工作整理每天的上下班、休息和加班紀錄，發薪時有明細可核對。</p>
   <div class="hero-actions">
-    <a class="btn-primary" href="https://apps.apple.com/tw/app/id6780721454" id="appstore-btn">
+    <a class="btn-primary" href="https://apps.apple.com/app/apple-store/id6780721454?pt=129045021&amp;ct=tw_seo_home_202611&amp;mt=8" id="appstore-btn">
       <svg viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      App Store
+      下載工時記錄 App
     </a>
-    <a class="btn-secondary" href="https://arvin-manager.github.io/workly-privacy">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      隱私政策 Privacy
-    </a>
+    <a class="btn-secondary" href="/work-hours-calculator/">免費試算工時與時薪</a>
   </div>
 </div>
 
 <!-- Features -->
 <section id="features">
-  <p class="section-label">核心功能 · Features</p>
-  <h2>你需要的，都在這裡</h2>
-  <p class="section-desc">Everything you need to manage work hours and salary, in one place.</p>
+
+  <h2>從打卡記錄到發薪核對</h2>
+  <p class="section-desc">工時、班表與預估收入一起整理，適合多份工作與不同計薪方式。部分進階功能需 VIP。</p>
   <div class="grid">
     <div class="card">
       <div class="card-icon" style="background:#EEF2FF">⏱️</div>
@@ -385,8 +405,8 @@
     </div>
     <div class="card">
       <div class="card-icon" style="background:#F0FDF4">💰</div>
-      <h3>薪資計算 <span>Salary Calculation</span></h3>
-      <p>根據工時自動推算薪資，支援多種計薪模式，實時顯示預估收入。</p>
+      <h3>時薪與加班費試算 <span>Pay Estimates</span></h3>
+      <p>依你設定的時薪、底薪與加班費率估算收入，支援津貼與扣款，方便核對薪資。</p>
     </div>
     <div class="card">
       <div class="card-icon" style="background:#FFF7ED">📊</div>
@@ -395,48 +415,63 @@
     </div>
     <div class="card">
       <div class="card-icon" style="background:#F5F3FF">🧾</div>
-      <h3>工資條 OCR <span>Payslip OCR</span></h3>
-      <p>拍照或上傳工資條圖片，AI 自動識別實發工資，按月歸檔保存。</p>
+      <h3>薪資單核對 <span>Payslip Review</span></h3>
+      <p>保存薪資單，將實發金額與同一計薪週期的工時及預估收入對照。OCR 識別需 VIP。</p>
     </div>
     <div class="card">
       <div class="card-icon" style="background:#FFF1F2">📁</div>
-      <h3>多項目管理 <span>Multi-Project</span></h3>
+      <h3>兼職與多份工作 <span>Multiple Jobs</span></h3>
       <p>同時管理多份工作，每個項目獨立設置薪資規則，隨時切換。</p>
     </div>
     <div class="card">
       <div class="card-icon" style="background:#F0F9FF">☁️</div>
       <h3>雲端備份 <span>Cloud Backup</span></h3>
-      <p>登錄後一鍵備份所有數據到雲端，換機也不怕數據丟失。</p>
+      <p>核心工時紀錄儲存在裝置上。VIP 使用者可登入備份，換機時還原支援的紀錄與設定。</p>
     </div>
   </div>
 </section>
 
 <!-- Modes -->
 <section id="modes" class="modes-section">
-  <p class="section-label">計薪模式 · Modes</p>
-  <h2>靈活適配各種薪資結構</h2>
-  <p class="section-desc">Flexible calculation modes to match any pay structure.</p>
+
+  <h2>時薪、月薪與加班怎麼記？</h2>
+  <p class="section-desc">依工作的計薪方式設定規則，按自己的結算週期查看估算收入。</p>
   <div class="modes-grid">
     <div class="mode-card">
-      <span class="tag">模式 01</span>
-      <h4>底薪 + 加班</h4>
-      <p>記錄正班與加班，精確計算每日實際收入</p>
+
+      <h3>底薪 + 加班</h3>
+      <p>正班工時照常記錄，底薪在週期總額中計入，加班費依設定估算。</p>
     </div>
     <div class="mode-card">
-      <span class="tag">模式 02</span>
-      <h4>僅加班記錄</h4>
-      <p>只記錄加班時數，月薪 = 底薪 + 加班費</p>
+
+      <h3>僅加班記錄</h3>
+      <p>記下每次加班時數，發薪前對照加班費、津貼與扣款。</p>
     </div>
     <div class="mode-card">
-      <span class="tag">模式 03</span>
-      <h4>綜合工時</h4>
+
+      <h3>綜合工時</h3>
       <p>達標前計正班，超出後自動轉換加班計費</p>
     </div>
     <div class="mode-card">
-      <span class="tag">模式 04</span>
-      <h4>純時薪</h4>
+
+      <h3>純時薪</h3>
       <p>固定時薪制，假日特殊費率獨立設置</p>
     </div>
+  </div>
+</section>
+
+
+<section class="guide" id="questions" aria-labelledby="questions-title">
+  <h2 id="questions-title">工時記錄與薪資試算常見問題</h2>
+  <div class="answers">
+    <h3>工時怎麼算？休息時間要扣掉嗎？</h3>
+    <p>先算下班與上班相差的時間，再扣除實際的無薪休息。例如 09:00 上班、18:00 下班，中間無薪休息 60 分鐘，工時為 8 小時。可用<a href="/work-hours-calculator/">免費工時計算機</a>試算。</p>
+    <h3>夜班跨日，怎麼記錄上下班？</h3>
+    <p>在計算機勾選「隔天下班」。例如 22:00 至隔天 07:00，扣除 1 小時無薪休息後為 8 小時。App 可記錄跨日班次與休息，方便回看實際出勤。</p>
+    <h3>可以計算加班費與月薪嗎？</h3>
+    <p>App 可依你輸入的時薪、底薪、加班和假日費率估算收入，並按計薪週期匯總。底薪制的單日紀錄主要呈現工時與加班等變動金額，底薪會在週期總額中計入。實發金額請對照公司薪資單。</p>
+    <h3>工時報表可以匯出嗎？</h3>
+    <p>VIP 可將考勤紀錄匯出為 Excel、PDF 或圖片，也能在 App 查看所選週期的工時與收入。是否需要 VIP 以 App 內功能標示為準。</p>
   </div>
 </section>
 
@@ -444,26 +479,26 @@
 <section style="padding: clamp(48px,8vw,80px) 24px">
   <div class="cta-section">
     <h2>立即開始記錄</h2>
-    <p>免費下載，告別手算薪資的煩惱<br/>Download free. No more manual calculations.</p>
-    <a class="btn-white" href="https://apps.apple.com/tw/app/id6780721454" id="appstore-btn2">
+    <p>先試算一班工時，或下載 App 累積每天的紀錄。App 提供選購的 VIP 功能。</p>
+    <a class="btn-white" href="https://apps.apple.com/app/apple-store/id6780721454?pt=129045021&amp;ct=tw_seo_home_202611&amp;mt=8" id="appstore-btn2">
       <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      下載 App / Download
+      前往 App Store 下載
     </a>
   </div>
 </section>
 
+</main>
 <!-- Footer -->
 <footer>
   <div class="footer-links">
-    <a href="https://arvin-manager.github.io/workly-privacy">隱私政策 Privacy Policy</a>
-    <a href="mailto:anarvin212@gmail.com">聯繫支援 Support</a>
+    <a href="https://arvin-manager.github.io/workly-privacy">隱私政策</a>
+    <a href="mailto:anarvin212@gmail.com">聯繫支援</a>
     <a href="app-ads.txt">app-ads.txt</a>
   </div>
-  <p>© 2025 Workly. All rights reserved.</p>
+  <p>© 2026 HourLedger. All rights reserved.</p>
 </footer>
 
-<script>
-</script>
+
 
 </body>
 </html>
